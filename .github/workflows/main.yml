@@ -19,12 +19,12 @@ jobs:
   run_hello_world_job:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-
       # Runs a single command using the runners shell
       - name: Say_hello
         run: echo Hello, world!
+      - name: Now it is
+        run: date
+      - name: directory content
+        run: ls -l
